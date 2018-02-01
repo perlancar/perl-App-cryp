@@ -29,7 +29,7 @@ sub to_native_currency {
     $cur2 // $cur;
 }
 
-sub from_native_pair {
+sub to_canonical_pair {
 }
 
 sub to_native_pair {
