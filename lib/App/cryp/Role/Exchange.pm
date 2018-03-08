@@ -30,6 +30,7 @@ sub to_native_currency {
 }
 
 sub to_canonical_pair {
+
 }
 
 sub to_native_pair {
@@ -64,11 +65,22 @@ Some examples of enveloped result:
 For more details about enveloped result, see L<Rinci::function>.
 
 
-=head1 METHODS
+=head1 PROVIDED METHODS
+
+=head2 to_canonical_currency
+
+=head2
+
+
+=head1 REQUIRED METHODS
 
 =head2 new
 
-Constructor. Known options:
+Usage:
+
+  new(%args) => obj
+
+Constructor. Known arguments:
 
 =over
 
@@ -81,6 +93,8 @@ Constructor. Known options:
 Method must return object.
 
 =head2 list_pairs
+
+Usage: $xchg->list_pairs => [$status, $reason, $payload, \%resmeta]
 
 List all pairs available for trading.
 
